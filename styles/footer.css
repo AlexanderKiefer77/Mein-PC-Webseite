@@ -1,8 +1,8 @@
+
 .footer {
     padding: 60px 120px;
-    background-color: var(--bg-color-main);
+    background-color: var(--bg-color-main, #0C103B);
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -16,14 +16,19 @@
 
 .copyright {
     font-size: 18px;
-    font-family: 'Palanquin';
-    color: var(--font-color);
+    font-family: 'Palanquin', sans-serif;
+    color: var(--font-color, white);
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-.social-media ul {
+.copyright img {
+    width: 26px;
+    height: auto;
+}
+
+.social-media {
     display: flex;
     gap: 16px;
     list-style: none;
@@ -32,12 +37,21 @@
 }
 
 .social-media a {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.2s, transform 0.2s;
 }
 
 .social-media img {
     width: 26px;
     height: auto;
+}
+
+.social-media a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
 }

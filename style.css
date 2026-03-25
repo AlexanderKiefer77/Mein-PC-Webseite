@@ -1,18 +1,22 @@
+:root {
+    --font-color: white;
+    --font-color-links: rgba(147, 184, 232, 1);
+    --bg-color-main: #0C103B;
+    --bg-color-software: rgba(111, 139, 221, 0.2);
+    --table-border-color: rgba(255, 255, 255, 1);
+    --table-th-bg-color: rgba(111, 139, 221, 0.2);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-:root {
-    --font-color: white;
-    --font-color-links: rgba(147, 184, 232, 1);
-    --bg-color-main: #0C103B;
-    --bg-color-software: rgba(111, 139, 221, 0.2);
-
-    --table-border-color: rgba(255, 255, 255, 1);
-    --table-th-bg-color: rgba(111, 139, 221, 0.2);
+html {
+  scroll-behavior: smooth;
 }
+
 
 /* iceland-regular - latin */
 @font-face {

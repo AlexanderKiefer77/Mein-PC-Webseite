@@ -1,40 +1,83 @@
 
 .landing-section {
     height: 100vh;
-
-    /* in der Praxis normalerweise folgende 4 Befehle */
     background-image: url("../assets/img/landing-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* streckt das Bild entsprechend */
-    /* background-size: contain; zeigt das ganz Bild an, gibt dann einen Teilrand */
-
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
-}
-
-.landing-section>img {
-    margin-top: 80px;
-    width: 600px;
-}
-
-a {
-    color: var(--font-color);
-    font-size: 24px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding: 40px 120px;
 }
 
-.nav-bar {
+.landing-section figure {
+    flex: 1;
     display: flex;
-    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
+.landing-section figure img {
+    width: 800px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.landing-section figure img:hover {
+    transform: scale(1.1) rotate(2deg);
+    filter: brightness(1.1);
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar a {
+    position: relative;
+    text-decoration: none;
+    color: var(--font-color, white);
+    font-size: 24px;
+    transition: transform 0.2s;
+}
+
+.nav-bar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: whitesmoke;
+    transition: width 0.3s ease;
+}
+
+.nav-bar a:hover {
+    transform: translateY(-2px);
+    text-shadow: 0 0 8px aqua;
+}
+
+.nav-bar a:hover::after {
+    width: 100%;
+}
+
+.header a img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.header a:hover img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px aqua);
+}

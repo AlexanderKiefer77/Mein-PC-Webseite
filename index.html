@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Mein PC</title>
+
     <link rel="shortcut icon" href="./assets/icons/Favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
@@ -18,143 +18,180 @@
 
     <header class="landing-section">
         <div class="header">
-            <nav class="nav-bar">
-                <a href="#">Das lerne ich</a>
-                <a href="#">Meine Software</a>
-                <a href="#">Meine Specs</a>
+            <nav class="nav-bar" aria-label="Hauptnavigation">
+                <ul>
+                    <li><a href="#components">Meine Specs</a></li>
+                    <li><a href="#learning-section">Das lerne ich</a></li>
+                    <li><a href="#my-software-section">Meine Software</a></li>
+                </ul>
             </nav>
 
-            <img src="./assets/icons/mail.svg" alt="E-Mail Icon">
+            <a href="mailto:someone@example.com" aria-label="E-Mail senden">
+                <img src="./assets/icons/mail.svg" alt="E-Mail Icon" aria-hidden="true">
+            </a>
         </div>
 
-        <img src="./assets/img/gaming-pc.png" alt="Darstellung eines PC">
+        <figure>
+            <img src="./assets/img/gaming-pc.png" alt="Gaming-PC Setup">
+        </figure>
     </header>
 
     <main class="main-content">
-        <section class="content-section">
-            <h2>Komponenten</h2>
+
+        <section id="components" class="content-section" aria-labelledby="components-heading">
+            <h2 id="components-heading">Komponenten</h2>
+
             <table class="components-table">
-                <tr>
-                    <th>Bauteil</th>
-                    <th>Bezeichnung</th>
-                    <th>Leistung</th>
-                </tr>
-                <tr>
-                    <td>CPU</td>
-                    <td>AMD Ryzen 5 5600X</td>
-                    <td>6 Kerne / 12 Threads, bis 4,6 GHz</td>
-                </tr>
-                <tr>
-                    <td>GPU</td>
-                    <td>NVIDIA GeForce RTX 3060</td>
-                    <td>12 GB VRAM</td>
-                </tr>
-                <tr>
-                    <td>RAM</td>
-                    <td>16 GB DDR4</td>
-                    <td>3200 MHz</td>
-                </tr>
-                <tr>
-                    <td>SSD</td>
-                    <td>1 TB NVMe</td>
-                    <td>Lesen ~ 3500 MB/s</td>
-                </tr>
-                <tr>
-                    <td>Netzteil</td>
-                    <td>650 W 80+ Gold</td>
-                    <td>650 Watt</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th scope="col">Bauteil</th>
+                        <th scope="col">Bezeichnung</th>
+                        <th scope="col">Leistung</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>CPU</td>
+                        <td>AMD Ryzen 5 5600X</td>
+                        <td>6 Kerne / 12 Threads, bis 4,6 GHz</td>
+                    </tr>
+                    <tr>
+                        <td>GPU</td>
+                        <td>NVIDIA GeForce RTX 3060</td>
+                        <td>12 GB VRAM</td>
+                    </tr>
+                    <tr>
+                        <td>RAM</td>
+                        <td>16 GB DDR4</td>
+                        <td>3200 MHz</td>
+                    </tr>
+                    <tr>
+                        <td>SSD</td>
+                        <td>1 TB NVMe</td>
+                        <td>Lesen ~ 3500 MB/s</td>
+                    </tr>
+                    <tr>
+                        <td>Netzteil</td>
+                        <td>650 W 80+ Gold</td>
+                        <td>650 Watt</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
 
-        <section class="content-section">
-            <h2>Das lerne ich gerade</h2>
+        <section id="learning-section" class="content-section" aria-labelledby="learning-heading">
+            <h2 id="learning-heading">Das lerne ich gerade</h2>
+
             <div class="learning-content">
-                <img src="./assets/img/html-and-css.png" alt="ein Laptop mit HTML und CSS Symbol">
+
+                <figure>
+                    <img src="./assets/img/html-and-css.png" alt="Laptop mit HTML und CSS Symbol">
+                </figure>
+
                 <div class="learning-content-right">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto optio sint praesentium
-                        exercitationem molestias iusto neque quibusdam eveniet nostrum labore velit asperiores veniam,
-                        voluptate, amet reiciendis! Distinctio accusantium assumenda quasi?
+                        exercitationem molestias iusto neque quibusdam eveniet nostrum labore velit asperiores
+                        veniam, voluptate, amet reiciendis! Distinctio accusantium assumenda quasi?
                     </p>
+
                     <h3>Dokus die ich nutze</h3>
-                    <div class="learning-content-links">
-                        <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a>
-                        <a href="https://developer.mozilla.org/de/" target="_blank"
-                            rel="noopener noreferrer">MDN-Docs</a>
-                    </div>
+
+                    <ul class="learning-content-links">
+                        <li>
+                            <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">
+                                W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://developer.mozilla.org/de/" target="_blank" rel="noopener noreferrer">
+                                MDN Docs
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+
             </div>
         </section>
 
-        <section class="content-section">
-            <h2>Diese Software nutze ich</h2>
+        <section id="my-software-section" class="content-section" aria-labelledby="software-heading">
+            <h2 id="software-heading">Diese Software nutze ich</h2>
+
             <p class="palanquin">
-                Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper. Lorem
-                ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada.
+                Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.
             </p>
 
-            <div class="software-card-wrapper">
-                <div class="software-card">
-                    <img src="./assets/img/FileZilla.svg" alt="Logo von FileZilla">
-                    <div>
-                        <h4>FileZilla</h4>
-                        <p>
-                            Für schnelle FTP/SFTP-Verbindungen zu Servern. Ideal zum Hochladen von Dateien, Verwalten
-                            von Ordnern und sauberen Deployments ohne viel Overhead.
-                        </p>
-                    </div>
-                </div>
+            <ul class="software-card-wrapper">
+                <li>
+                    <article class="software-card">
+                        <img src="./assets/img/FileZilla.svg" alt="Logo von FileZilla">
+                        <div>
+                            <h3>FileZilla</h3>
+                            <p>
+                                Für schnelle FTP/SFTP-Verbindungen zu Servern. Ideal zum Hochladen von Dateien,
+                                Verwalten
+                                von Ordnern und sauberen Deployments ohne viel Overhead.
+                            </p>
+                    </article>
+                </li>
 
-                <div class="software-card">
-                    <img src="./assets/img/Discord.svg" alt="Logo von Discord">
-                    <div>
-                        <h4>Discord</h4>
-                        <p>
-                            Mein Kommunikations-Hub für Voice, Chat und Communities. Praktisch für Gaming-Sessions,
-                            schnelle Absprachen und Screensharing beim gemeinsamen Arbeiten.
-                        </p>
-                    </div>
-                </div>
-            </div>
+                <li>
+                    <article class="software-card">
+                        <img src="./assets/img/Discord.svg" alt="Logo von Discord">
+                        <div>
+                            <h3>Discord</h3>
+                            <p>
+                                Mein Kommunikations-Hub für Voice, Chat und Communities. Praktisch für Gaming-Sessions,
+                                schnelle Absprachen und Screensharing beim gemeinsamen Arbeiten.
+                            </p>
+                        </div>
+                    </article>
+                </li>
+            </ul>
 
-            <div class="software-card-wrapper">
-                <div class="software-card">
-                    <img src="./assets/img/VSCode.svg" alt="Logo von FileZilla">
-                    <div>
-                        <h4>Visual Studio Code</h4>
-                        <p>
-                            Leichter, schneller Editor für alles von HTML/CSS bis größere Projekte. Extensions,
-                            Git-Integration und Terminal machen ihn zum Daily Driver fürs Coden.
-                        </p>
-                    </div>
-                </div>
+            <ul class="software-card-wrapper">
+                <li>
+                    <article class="software-card">
+                        <img src="./assets/img/VSCode.svg" alt="Logo von Visual Studio Code">
+                        <div>
+                            <h3>Visual Studio Code</h3>
+                            <p>
+                                Leichter, schneller Editor für alles von HTML/CSS bis größere Projekte. Extensions,
+                                Git-Integration und Terminal machen ihn zum Daily Driver fürs Coden.
+                            </p>
+                        </div>
+                    </article>
+                </li>
 
-                <div class="software-card">
-                    <img src="./assets/img/Chrome.svg" alt="Logo von Discord">
-                    <div>
-                        <h4>Google Chrome</h4>
-                        <p>
-                            Für Recherche, Web-Apps und Testing. Die DevTools sind top zum Debuggen von Layout,
-                            Performance und JavaScript – perfekt beim Bauen kleiner Websites.
-                        </p>
-                    </div>
-                </div>
-            </div>
+                <li>
+                    <article class="software-card">
+                        <img src="./assets/img/Chrome.svg" alt="Logo von Google Chrome">
+                        <div>
+                            <h3>Google Chrome</h3>
+                            <p>
+                                Für Recherche, Web-Apps und Testing. Die DevTools sind top zum Debuggen von Layout,
+                                Performance und JavaScript – perfekt beim Bauen kleiner Websites.
+                            </p>
+                        </div>
+                    </article>
+                </li>
+            </ul>
 
         </section>
+
     </main>
 
     <footer class="footer">
         <div class="footer-content">
 
             <p class="copyright">
-                <img src="./assets/icons/copyright.svg" alt="Copyright Logo" aria-hidden="true">
+                <img src="./assets/icons/copyright.svg" alt="" aria-hidden="true">
                 <span>2026 Mein PC</span>
             </p>
 
-            <nav class="social-media" aria-label="Social Media">
-                <ul>
+            <nav aria-label="Social Media">
+                <ul class="social-media">
                     <li>
                         <a href="https://www.facebook.com/?locale=de_DE" target="_blank" rel="noopener noreferrer">
                             <img src="./assets/icons/facebook.svg" alt="Facebook">
@@ -170,6 +207,7 @@
 
         </div>
     </footer>
+
 </body>
 
 </html>

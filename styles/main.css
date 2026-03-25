@@ -1,5 +1,5 @@
 .main-content {
-    background-color: var(--bg-color-main);
+    background-color: var(--bg-color-main, #0C103B);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,7 @@
 
 .content-section>h2 {
     font-size: 64px;
-    color: var(--font-color);
+    color: var(--font-color, white);
     width: 100%;
     text-align: center;
 }
@@ -28,15 +28,15 @@
 .components-table {
     max-width: 1200px;
     width: 100%;
-    color: var(--font-color);
-    border: 4px solid var(--table-border-color);
+    color: var(--font-color, white);
+    border: 4px solid var(--table-border-color, white);
     border-collapse: collapse;
 }
 
 .components-table th {
     /* .components-table>tbody>tr>th */
-    border: 4px solid var(--table-border-color);
-    background-color: var(--table-th-bg-color);
+    border: 4px solid var(--table-border-color, white);
+    background-color: var(--table-th-bg-color, white);
     font-size: 48px;
     text-align: left;
     padding: 16px 16px 8px 16px;
@@ -44,8 +44,8 @@
 
 .components-table td {
     font-size: 32px;
-    border-left: 4px solid var(--table-border-color);
-    border-bottom: 1px solid var(--table-border-color);
+    border-left: 4px solid var(--table-border-color, white);
+    border-bottom: 1px solid var(--table-border-color, white);
     padding: 8px 16px;
 }
 
@@ -53,13 +53,12 @@
 .learning-content {
     max-width: 1200px;
     width: 100%;
-    color: var(--font-color);
+    color: var(--font-color, white);
     display: flex;
     gap: 40px;
 }
 
-.learning-content>img {
-    /* mit > genauer bestimmt */
+.learning-content figure img {
     width: 500px;
 }
 
@@ -73,59 +72,71 @@ h3 {
     font-size: 48px;
 }
 
-.learning-content-right>p {
+.learning-content-right p {
     font-size: 24px;
-    color: var(--font-color);
+    color: var(--font-color, white);
 }
 
 .learning-content-links {
-    color: var(--font-color-links);
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    gap: 48px;
-    font-size: 32px;
+    gap: 24px;
 }
 
-.learning-content-links>a {
-    color: var(--font-color-links);
+.learning-content-links a {
+    display: block;
+    color: var(--font-color-links, white);
+    font-size: 32px;
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 8px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.learning-content-links a:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.2);
 }
 
 /* ################################ */
 .palanquin {
     font-size: 24px;
-    color: var(--font-color);
-    font-family: 'Palanquin';
+    color: var(--font-color, white);
+    font-family: 'Palanquin', sans-serif;
 }
 
 .software-card-wrapper {
-    display: flex;
+    display: flex;    
     gap: 40px;
-}
-
-.software-card-wrapper>p {
-    width: 100%;
+    list-style: none;
 }
 
 .software-card {
-    background-color: var(--bg-color-software);
+    width: 530px;
+    min-height: 180px;
+    background-color: var(--bg-color-software, #f0f0f0);
     display: flex;
     align-items: center;
-    width: 530px;
     gap: 24px;
     border: 5px solid white;
     padding: 16px;
+
 }
 
-.software-card>img {
+.software-card > img {
     width: 120px;
+    height: auto;
 }
 
-h4 {
-    color: var(--font-color);
-    font-size: 40px;
+.software-card h3 {
+    color: var(--font-color, white);
+    font-size: 28px;
 }
 
 .software-card p {
-    padding-top: 16px;
+    padding-top: 8px;
     font-size: 20px;
-    color: var(--font-color);
+    color: var(--font-color, white);
 }
