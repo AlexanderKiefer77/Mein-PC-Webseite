@@ -8,6 +8,10 @@
 
 .content-section {
     padding: 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
 }
 
 .content-section>h2 {
@@ -15,4 +19,25 @@
     color: var(--font-color);
     width: 100%;
     text-align: center;
+}
+
+.components-table {
+    max-width: 1200px;
+    width: 100%;
+    color: var(--font-color);
+    border: 4px solid var(--table-border-color);
+    border-collapse: collapse;
+}
+
+.components-table th { /* .components-table>tbody>tr>th */
+    border: 4px solid var(--table-border-color);
+    background-color: var(--table-th-bg-color);
+    text-align: left;
+    padding: 16px 16px 8px 16px;
+}
+
+.components-table td {
+    border-left: 4px solid var(--table-border-color);
+    border-bottom: 1px solid var(--table-border-color);
+    padding: 8px 16px;
 }

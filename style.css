@@ -7,4 +7,7 @@
 :root {
     --font-color: white;
     --bg-color-main: #0C103B;
+    --table-border-color: rgba(255, 255, 255, 1);
+    --table-th-bg-color: rgba(111, 139, 221, 0.2);
+
 }
