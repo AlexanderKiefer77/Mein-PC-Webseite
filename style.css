@@ -6,8 +6,17 @@
 
 :root {
     --font-color: white;
+    --font-color-links: rgba(147, 184, 232, 1);
     --bg-color-main: #0C103B;
     --table-border-color: rgba(255, 255, 255, 1);
     --table-th-bg-color: rgba(111, 139, 221, 0.2);
+}
 
+/* iceland-regular - latin */
+@font-face {
+  /* font-display: swap; Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Iceland';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/iceland/iceland-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }

@@ -4,6 +4,7 @@
     flex-direction: column;
     padding: 120px 0;
     gap: 120px;
+    font-family: 'Iceland';
 }
 
 .content-section {
@@ -29,15 +30,58 @@
     border-collapse: collapse;
 }
 
-.components-table th { /* .components-table>tbody>tr>th */
+.components-table th {
+    /* .components-table>tbody>tr>th */
     border: 4px solid var(--table-border-color);
     background-color: var(--table-th-bg-color);
+    font-size: 48px;
     text-align: left;
     padding: 16px 16px 8px 16px;
 }
 
 .components-table td {
+    font-size: 32px;
     border-left: 4px solid var(--table-border-color);
     border-bottom: 1px solid var(--table-border-color);
     padding: 8px 16px;
+}
+
+/* ################################ */
+.learning-content {
+    max-width: 1200px;
+    width: 100%;
+    color: var(--font-color);
+    display: flex;
+    gap: 40px;    
+}
+
+.learning-content>img {
+    /* mit > genauer bestimmt */
+    width: 500px;
+}
+
+.learning-content-right {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 40px;
+}
+
+h3 {
+    font-size: 48px;    
+}
+
+p {
+    font-size: 24px;
+}
+
+.learning-content-links {   
+    color: var(--font-color-links); 
+    display: flex;
+    gap: 48px;
+    font-size: 32px;
+}
+
+.learning-content-links>a {   
+    color: var(--font-color-links);
 }
