@@ -4,42 +4,7 @@
     padding: 0;
 }
 
-.landing-section {
-    height: 100vh;
-
-    /* in der Praxis normalerweise folgende 4 Befehle */
-    background-image: url("./assets/img/landing-bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* streckt das Bild entsprechend */
-    /* background-size: contain; zeigt das ganz Bild an, gibt dann einen Teilrand */
-
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+:root {
+    --font-color: white;
+    --bg-color-main: #0C103B;
 }
-
-.landing-section>img {
-    margin-top: 80px;
-    width: 600px;
-}
-
-a {
-    color: white;
-    font-size: 24px;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 40px 120px;
-}
-
-.nav-bar {
-    display: flex;
-    gap: 32px;
-}
-

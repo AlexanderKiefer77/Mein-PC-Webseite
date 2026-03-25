@@ -1,0 +1,18 @@
+.main-content {
+    background-color: var(--bg-color-main);
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0;
+    gap: 120px;
+}
+
+.content-section {
+    padding: 0 120px;
+}
+
+.content-section>h2 {
+    font-size: 64px;
+    color: var(--font-color);
+    width: 100%;
+    text-align: center;
+}
