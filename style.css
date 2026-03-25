@@ -16,10 +16,30 @@
     /* background-size: contain; zeigt das ganz Bild an, gibt dann einen Teilrand */
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
 }
 
 .landing-section>img {
-    height: 500px;
+    margin-top: 80px;
+    width: 600px;
 }
+
+a {
+    color: white;
+    font-size: 24px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 120px;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 32px;
+}
+
