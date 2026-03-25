@@ -90,9 +90,10 @@ h3 {
 }
 
 /* ################################ */
-.content-section p {    
+.palanquin {
     font-size: 24px;
     color: var(--font-color);
+    font-family: 'Palanquin';
 }
 
 .software-card-wrapper {
