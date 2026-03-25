@@ -2,12 +2,15 @@
     background-color: var(--bg-color-main);
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 120px 0;
     gap: 120px;
     font-family: 'Iceland';
 }
 
 .content-section {
+    max-width: 1200px;
+    width: 100%;
     padding: 0 120px;
     display: flex;
     flex-direction: column;
@@ -52,7 +55,7 @@
     width: 100%;
     color: var(--font-color);
     display: flex;
-    gap: 40px;    
+    gap: 40px;
 }
 
 .learning-content>img {
@@ -63,25 +66,65 @@
 .learning-content-right {
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
     gap: 40px;
 }
 
 h3 {
-    font-size: 48px;    
+    font-size: 48px;
 }
 
-p {
+.learning-content-right>p {
     font-size: 24px;
+    color: var(--font-color);
 }
 
-.learning-content-links {   
-    color: var(--font-color-links); 
+.learning-content-links {
+    color: var(--font-color-links);
     display: flex;
     gap: 48px;
     font-size: 32px;
 }
 
-.learning-content-links>a {   
+.learning-content-links>a {
     color: var(--font-color-links);
+}
+
+/* ################################ */
+.content-section p {    
+    font-size: 24px;
+    color: var(--font-color);
+}
+
+.software-card-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.software-card-wrapper>p {
+    width: 100%;
+}
+
+.software-card {
+    background-color: var(--bg-color-software);
+    display: flex;
+    align-items: center;
+    width: 530px;
+    gap: 24px;
+    border: 5px solid white;
+    padding: 16px;
+}
+
+.software-card>img {
+    width: 120px;
+}
+
+h4 {
+    color: var(--font-color);
+    font-size: 40px;
+}
+
+.software-card p {
+    padding-top: 16px;
+    font-size: 20px;
+    color: var(--font-color);
 }
