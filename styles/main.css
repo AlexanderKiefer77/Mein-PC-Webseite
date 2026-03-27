@@ -3,23 +3,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px 0;
-    gap: 120px;
+    padding: clamp(20px, 8vw, 120px) 0;
+    gap: clamp(50px, 5vw, 120px);
     font-family: 'Iceland';
 }
 
 .content-section {
     max-width: 1200px;
     width: 100%;
-    padding: 0 120px;
+    padding: 0 clamp(24px, 10vw, 120px);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 48px;
 }
 
-.content-section>h2 {
-    font-size: 64px;
+.content-section h2 {
+    font-size: clamp(24px, 2.42vw + 1rem, 64px);
     color: var(--font-color, white);
     width: 100%;
     text-align: center;
@@ -36,16 +36,16 @@
 .components-table th {
     border: 4px solid var(--table-border-color, white);
     background-color: var(--table-th-bg-color, white);
-    font-size: 48px;
+    font-size: clamp(22px, 5vw, 48px);
     text-align: left;
-    padding: 16px 16px 8px 16px;
+    padding: clamp(8px, 2vw, 16px) clamp(8px, 2vw, 16px) 8px clamp(8px, 2vw, 16px);
 }
 
 .components-table td {
-    font-size: 32px;
+    font-size: clamp(16px, 4vw, 32px);
     border-left: 4px solid var(--table-border-color, white);
     border-bottom: 1px solid var(--table-border-color, white);
-    padding: 8px 16px;
+    padding: 8px clamp(8px, 2vw, 16px);
 }
 
 /* ################################ */
@@ -54,25 +54,40 @@
     width: 100%;
     color: var(--font-color, white);
     display: flex;
-    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.learning-content figure {
+    flex: 1 1 400px;
+    margin: 0;
+    min-width: 260px;
+    max-width: 500px;
 }
 
 .learning-content figure img {
-    width: 500px;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .learning-content-right {
+    padding: 20px;
+    flex: 2 1 300px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    align-items: center;
+    gap: 20px;
 }
 
 h3 {
-    font-size: 48px;
+    font-size: clamp(24px, 3.23vw, 48px);
 }
 
 .learning-content-right p {
-    font-size: 24px;
+    font-size: clamp(16px, 1.2vw + 12.1px, 24px);
     color: var(--font-color, white);
 }
 
@@ -81,15 +96,15 @@ h3 {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 24px;
+    justify-content: center;
+    gap: clamp(16px, 2vw, 24px);
 }
 
 .learning-content-links a {
     display: block;
     color: var(--font-color-links, white);
-    font-size: 32px;
+    font-size: clamp(22px, 2.5vw, 32px);
     text-decoration: none;
-    padding: 16px 24px;
     border-radius: 8px;
     transition: background-color 0.2s, transform 0.2s;
 }
@@ -101,19 +116,21 @@ h3 {
 
 /* ################################ */
 .palanquin {
-    font-size: 24px;
+    font-size: clamp(16px, 1.2vw + 12.1px, 24px);
     color: var(--font-color, white);
     font-family: 'Palanquin', sans-serif;
+    text-align: center;
 }
 
 .software-card-wrapper {
-    display: flex;    
+    display: flex;
     gap: 40px;
     list-style: none;
 }
 
 .software-card {
-    width: 530px;
+    max-width: 530px;
+    width: 100%;
     min-height: 180px;
     background-color: var(--bg-color-software, #f0f0f0);
     display: flex;
@@ -121,21 +138,20 @@ h3 {
     gap: 24px;
     border: 5px solid white;
     padding: 16px;
-
 }
 
-.software-card > img {
+.software-card>img {
     width: 120px;
     height: auto;
 }
 
 .software-card h3 {
     color: var(--font-color, white);
-    font-size: 28px;
+    font-size: clamp(20px, 1.5vw + 14px, 28px);
 }
 
 .software-card p {
     padding-top: 8px;
-    font-size: 20px;
+    font-size: clamp(16px, 0.5vw + 12px, 20px);
     color: var(--font-color, white);
 }

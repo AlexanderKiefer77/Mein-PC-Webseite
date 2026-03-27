@@ -1,0 +1,29 @@
+/* Spezial-Anpassung für quadratische/faltbare Displays (wie Zenbook Fold) */
+@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 4/3) {
+    .landing-section {
+        /* Falls das Bild bei fast quadratischen Screens zu stark beschnitten wird */
+        background-position: 50% 20%;
+    }
+}
+
+
+@media(max-width: 1200px) {
+    .software-card-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px) {
+    .mail-logo {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-evenly;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
