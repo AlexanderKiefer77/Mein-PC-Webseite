@@ -1,11 +1,13 @@
-
 /* ####################################### */
 /* this classes are only used in Impressum */
+:root {
+    --contentLimitation: 1440px;
+}
 
 * {
     box-sizing: border-box;
     margin: 0;
-    scroll-behavior: smooth;    
+    scroll-behavior: smooth;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /*position: relative;*/
     color: black;
@@ -15,25 +17,18 @@ a {
     text-decoration: none;
 }
 
-.h1Impressum, .h2Impressum {
+.h1Impressum,
+.h2Impressum {
     color: darkblue;
 }
 
-.contentWidthImpressum {
-    box-sizing: border-box;
-    max-width: var(--maxWidth);
+.impressum {
+    max-width: var(--contentLimitation);
     width: 100%;
     margin: auto;
-    padding-left: 24px;
-    padding-right: 24px;
-}
-
-.impressum {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    font-size: clamp(16px, 2vw, 24px);
+    padding: 48px 24px;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    hyphens: auto;
 }
-
-
-

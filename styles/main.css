@@ -9,9 +9,7 @@
 }
 
 .content-section {
-    max-width: 1200px;
     width: 100%;
-    padding: 0 clamp(24px, 10vw, 120px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,8 +24,8 @@
 }
 
 .components-table {
-    max-width: 1200px;
     width: 100%;
+    margin: 0 16px;
     color: var(--font-color, white);
     border: 4px solid var(--table-border-color, white);
     border-collapse: collapse;
@@ -50,7 +48,7 @@
 
 /* ################################ */
 .learning-content {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     width: 100%;
     color: var(--font-color, white);
     display: flex;
@@ -124,19 +122,21 @@ h3 {
 
 .software-card-wrapper {
     display: flex;
-    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: clamp(24px, 3vw, 40px);
     list-style: none;
 }
 
 .software-card {
     max-width: 530px;
     width: 100%;
-    min-height: 180px;
+    min-height: 200px;
     background-color: var(--bg-color-software, #f0f0f0);
     display: flex;
     align-items: center;
     gap: 24px;
-    border: 5px solid white;
+    border: 5px solid var(--table-border-color, white);
     padding: 16px;
 }
 

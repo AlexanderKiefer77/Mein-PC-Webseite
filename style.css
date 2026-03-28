@@ -1,4 +1,7 @@
 :root {
+  --contentLimitation: 1440px;
+  --minPadding: clamp(24px, 8vw, 120px);
+
   --font-color: white;
   --font-color-links: rgba(147, 184, 232, 1);
   --bg-color-main: #0C103B;
@@ -16,7 +19,27 @@
 }
 
 html {
+  font-size: 16px;
   scroll-behavior: smooth;
+}
+
+.content-limitation {
+  padding: 0 max(calc((100% - var(--contentLimitation))/2), var(--minPadding));
+}
+
+/* Für Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Für Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* Für IE & alte Edge-Versionen */
+* {
+  -ms-overflow-style: none;
 }
 
 /* iceland-regular - latin */

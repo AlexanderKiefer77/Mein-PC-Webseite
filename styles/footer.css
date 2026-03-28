@@ -1,12 +1,12 @@
 .footer {
-    padding: clamp(32px, 3.03vw + 20px, 60px) clamp(24px, 5vw, 120px);
+    padding-top: clamp(32px, 3.03vw + 20px, 60px);
+    padding-bottom: clamp(32px, 3.03vw + 20px, 60px);
     background-color: var(--bg-color-main, #0C103B);
     display: flex;
     justify-content: center;
 }
 
 .footer-content {
-    max-width: 1200px;
     width: 100%;
     display: flex;
     justify-content: space-between;

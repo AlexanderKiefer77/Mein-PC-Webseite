@@ -22,8 +22,12 @@
         justify-content: space-evenly;
     }
 
+    .nav-bar ul {
+        text-align: center;
+    }
+
     .footer-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 12px;
     }
 }
