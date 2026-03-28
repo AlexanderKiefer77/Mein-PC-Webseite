@@ -11,6 +11,11 @@
     .software-card-wrapper {
         flex-direction: column;
     }
+
+    .landing-section figure img {
+        width: 80%;
+        height: auto;
+    }
 }
 
 @media(max-width: 600px) {
@@ -20,6 +25,11 @@
 
     .header {
         justify-content: space-evenly;
+    }
+
+    .landing-section figure img {
+        width: 90%;
+        height: auto;
     }
 
     .nav-bar ul {
